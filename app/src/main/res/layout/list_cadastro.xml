@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/corretora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#3498db"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        tools:text="R$" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" / / :" />
+
+    <TextView
+        android:id="@+id/lucro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="%" />
+
+</LinearLayout>
