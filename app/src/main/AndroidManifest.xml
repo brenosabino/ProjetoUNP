@@ -29,7 +29,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".CadastroActivity"
+        <activity
+            android:name=".CadastroActivity"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -38,6 +39,15 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <receiver android:name=".CadastroWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cadastro_widget_info" />
+        </receiver>
     </application>
 
 </manifest>

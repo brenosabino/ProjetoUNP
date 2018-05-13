@@ -3,4 +3,11 @@
     <string name="teste">Teste</string>
     <string name="pre_os">Preços</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="appwidget_text">Preço do Bitcoin</string>
+    <string name="appwidget_price">%1$s</string>
+    <string name="appwidget_time">%1$s</string>
+    <string name="add_widget">Add widget</string>
+    <string name="appwidget_update">Atualizar</string>
+    <string name="appwidget_updatetext">Ultima Atualização</string>
+    <string name="limpar">Limpar</string>
 </resources>
