@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- This permissions are necessary for broadcast receiver -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +26,8 @@
         </activity>
         <activity
             android:name=".CorretorasActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
@@ -49,6 +53,11 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/cadastro_widget_info" />
         </receiver>
+
+        <activity
+            android:name=".PrecoActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

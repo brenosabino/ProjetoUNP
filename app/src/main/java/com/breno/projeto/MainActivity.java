@@ -138,7 +138,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void mudarActivity(View view) {
-        Intent intent = new Intent(this, CorretorasActivity.class);
+        //Intent intent = new Intent(this, CorretorasActivity.class);
+        Intent intent = new Intent(this, PrecoActivity.class);
         startActivity(intent);
     }
 

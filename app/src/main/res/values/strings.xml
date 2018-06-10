@@ -10,4 +10,5 @@
     <string name="appwidget_update">Atualizar</string>
     <string name="appwidget_updatetext">Ultima Atualização</string>
     <string name="limpar">Limpar</string>
+    <string name="local">Local</string>
 </resources>
